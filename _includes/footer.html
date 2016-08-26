@@ -93,6 +93,17 @@
             </a>
           </li>
           {% endif %}
+      {% if site.author.angellist and site.footer-links-active.angellist %}
+          <li>
+            <a href="https://www.angel.co/{{ site.author.angellist }}" title="AngelList">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-angellist fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+              
 		  {% if site.footer-links-active.rss %}
 		  <li>
 			<a href="{{ '/feed.xml' | prepend: site.baseurl }}" title="RSS">

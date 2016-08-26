@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://ianubhav.github.io"
+url: "https://ianubhav.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -23,12 +23,12 @@ description: A virtual proof that name is awesome!
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
   Blog: "blog"
-  Resume: "resume"
+  Resume: "resume.pdf"
+  Contact: "contact"
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "/img/avatar-icon.jpg"
 
 # --- Footer options --- #
 
@@ -39,8 +39,9 @@ author:
   email: "agarwal.anubhav@iitrpr.ac.in"
   facebook: anubhavgo  # eg. daattali
   github: ianubhav    # eg. daattali
-  # twitter: yourname   # eg. daattali
   linkedin: ianubhav  # eg. daattali
+  angellist: ianubhav
+  # twitter: yourname   # eg. daattali
   # xing: yourname      # eg. daattali
   # stackoverflow: yourlink  # eg. "3943160/daattali"
   # instagram: yourname # eg. daattali
@@ -53,11 +54,12 @@ footer-links-active:
   email: true
   twitter: true
   github: true
-  linkedin: false
+  linkedin: true
   xing: false
   stackoverflow: false
   instagram: false
   youtube: false
+  angellist: true
 
 # Select which share links to show in posts
 share-links-active:
@@ -68,24 +70,26 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+# url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+disqus: "thegelato"
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-83209652-1"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "Asia/Kolkata"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
+
 paginate: 5
+paginate_path: "/blog/page:num/"
 
 kramdown:
   input: GFM
